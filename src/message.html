@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f1f1f1;
+            }
+            #title {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 50px;
+            }
+            /* make triangle on oneside and text on the other */
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 60%;
+                margin: auto;
+                background-color: #ffffff;
+                border-radius: 25px;
+                padding: 50px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.092);    
+            }
+            .message {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .warning_triangle {
+                color: #ff0000;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                padding-left: 100px;
+
+            }
+            .link {
+                color: #0000ff;
+            }
+            .footer {
+                text-align: center;
+                position: relative;
+                bottom: 0px;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                color: rgb(164, 164, 164);
+
+            }
+            .footer a {
+                color: rgb(138, 138, 138);
+            }
+
+            @media only screen and (max-width: 800px) {
+                .container {
+                    flex-direction: column;
+                    width: 90%;
+                    padding: 20px;
+                }
+                .warning_triangle {
+                    padding-left: 0px;
+                }
+                #title {
+                    font-size: 30px;
+                }
+                .footer {
+                    font-size: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title" class="title">This site is currently down</h1>
+        <div class="container"> 
+            <div>
+                <p id="message" class="message">Loading...</p>
+                <p>For more information about this incident please see <a href="" id="link" class="link">Loading...</a></p>
+            </div>
+            <div>    
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="warning_triangle" viewBox="0 0 16 16">
+                     <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                 </svg>
+             </div>
+        </div>
+        <div class="footer">
+            <p>Powered by <a href="https://www.github.com/lewisevans2007/SiteDownAlert">SiteDownAlert</a></p>
+        </div>
+        <script src="xxs_blocker.js"></script>
+        <script src="options_loader.js"></script>
+        <script>
+            load();
+            
+        </script>
+    </body>
+</html>
