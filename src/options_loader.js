@@ -13,20 +13,24 @@ function show_error(){
 function load(){
     var urlParams = new URLSearchParams(window.location.search);
     var message = urlParams.get('message');
+
     if (message == null){
         show_error();
         return;
     }
+    
     var link = urlParams.get('link');
     if (link == null){
         show_error();
         return;
     }
+    
     var link_text = urlParams.get('link_text');
     if (link_text == null){
         show_error();
         return;
     }
+
     var messageElement = document.getElementById("message");
     var linkElement = document.getElementById("link");
     message = atob(message);
