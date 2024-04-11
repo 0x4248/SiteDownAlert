@@ -1,8 +1,8 @@
 /* SiteDownAlert
  * A simple webpage that takes in parameters and shows a nice warning message to the user.
- * GitHub: https://www.github.com/lewisevans2007/SiteDownAlert
+ * GitHub: https://www.github.com/0x4248/SiteDownAlert
  * Licence: GNU General public licence v3.0
- * By: Lewis Evans
+ * By: 0x4248
  */
 
 function block_xxs(content) {
